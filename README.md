@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# 🌟 Stellar Level 1 – White Belt dApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beginner-friendly **Stellar Testnet dApp** built with React that demonstrates the core fundamentals of Stellar blockchain development.
 
-## Available Scripts
+This project connects a Freighter wallet, displays the wallet balance, and allows sending XLM transactions on the Stellar Testnet.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔗 Connect Stellar wallet (Freighter)
+- 💰 Display XLM balance
+- 📤 Send XLM transaction on Testnet
+- 🌐 Uses Stellar Horizon Testnet
+- ⚛️ Built with React
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React (Create React App)
+- @stellar/stellar-sdk
+- @stellar/freighter-api
+- Stellar Testnet
+- Horizon API
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone https://github.com/your-username/stellar-dapp.git
 
-### `npm run eject`
+Navigate to project folder:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd stellar-dapp
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start development server:
 
-## Learn More
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app will run on:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+http://localhost:3000
 
-### Code Splitting
+## 🔐 Wallet Setup (Testnet)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install Freighter Wallet browser extension.
 
-### Analyzing the Bundle Size
+Create a new wallet.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Switch network to Testnet.
 
-### Making a Progressive Web App
+Fund your wallet using Stellar Friendbot:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+https://friendbot.stellar.org?addr=YOUR_PUBLIC_KEY
 
-### Advanced Configuration
+## 🧪 How It Works
+1️⃣ Connect Wallet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Uses @stellar/freighter-api to request wallet access.
 
-### Deployment
+2️⃣ Fetch Balance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Uses Stellar Horizon Testnet server:
 
-### `npm run build` fails to minify
+https://horizon-testnet.stellar.org
+3️⃣ Send XLM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Builds and signs a transaction using:
+
+TransactionBuilder
+
+Operation.payment
+
+Freighter signTransaction
+
+## 📁 Project Structure
+```
+stellar-dapp/
+│
+├── src/
+│   ├── App.js
+│   ├── index.js
+│
+├── package.json
+└── README.md
+```
+## ⚠️ Common Issues
+❌ react-scripts not recognized
+
+Run:
+
+npm install
+❌ Freighter not detected
+
+Make sure extension is installed
+
+Ensure Testnet is selected
+
+Refresh browser
+
+Do not use Incognito mode
+
+## 🎯 Learning Objectives
+
+This project demonstrates:
+
+Stellar wallet integration
+
+Fetching account balances
+
+Creating and signing transactions
+
+Interacting with Horizon API
+
+Blockchain fundamentals on Testnet
